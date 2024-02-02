@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+  --bs-dark-color: #1a1d20;
+  --bs-dark-primary: #1c1c1c;
+  --bs-main-color:#fff;
+  --bs-primary-color:#c6c6c6;
+  --bs-secondary-color:#29a9fd;
+  --bs-supporting-color:#c850c0;
+}
+/* Mukta */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Mukta', sans-serif 'Poppins', sans-serif; /* or 'Poppins', sans-serif; */
+}
+p {
+  margin: 10px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: black;
+  letter-spacing: 0.07rem;
+  line-height: 1.75rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+
+p:first-line {
+  color: red;
+  font-weight: bold;
+}
+.highlight-words {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333; /* Set your desired text color */
+}
+
+.highlight {
+  background-color: yellow; /* Set your desired highlight color */
+  font-weight: bold;
+}
+
+/* Larger font size for large screens (desktops) */
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Adjusted font size for tablets */
+@media (max-width: 1199px) and (min-width: 768px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Smaller font size for mobile devices */
+@media (max-width: 767px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+h2{
+  line-height: 3rem;
+  font-weight: 600;
+  font-size: 3.4rem;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Mukta', sans-serif;
+  color: black;
+}
+h1{
+  font-size: 3.8rem;
+}
+.common-heading{
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem !important;
+}
+.common-heading{
+  margin-bottom: 4.2rem;
+} 
+.common-title{
+
+}
+button, a{
+  /* font-size: 1.5rem !important;
+  letter-spacing: 0.03rem;
+  word-spacing: .1rem; */
+}
+@media  only screen and (max-width:768px) {
+    #searchform{
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+}
+@media  only screen and (max-width:500px) {
+    img {
+       
+        width: 300px;
+    }
+    .carousel-item img{
+      height: 25vh;
+    }
+    
+}
+.row{
+    /* padding-top: 60px; */
+    /* margin: 10px; */
+
+    
+}
+#main{
+    padding-top: 10px;
+    /* background-color: #fcc302; */
+    /* padding-bottom: 20px; */
+}
+#maintext h3{
+    color: black;
+    font-size: 25px;
+    /* margin: 10px; */
+
+}
+#maintext p{
+    color: black;
+    font-size:20px ;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#p-section {
+    background-image: url(../img/2150693532.jpg);
+   
+}
+#row-section {
+  background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
+}
+
+#p-section p {
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+  
+  /* Style for highlighted words */
+  .highlight {
+    color: red; /* Adjust the color as needed */
+    font-weight: bold;
+  }
+.carousel-item img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 1rem;
+}
+.col-md-8 p {
+    line-height: 1.5;
+}
+/* styles.css */
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.navbar {
+    background-color: darkred;
+    background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
+
+  }
+  .navbar-nav li.nav-item a {
+    font-weight: bold;
+
+  }
+  
+  
+  .navbar-brand,.text-primary {
+    color: #0a58ca;
+  }
+  
+  .navbar-link:hover {
+    color: #0a58ca;
+  }
+  .nav-link {
+    color: #0a58ca;
+    font-weight: 400;
+}
+
+.navbar .dropdown-menu {
+    padding: 0; /* Adjust the top and bottom padding */
+    margin: 0; /* Remove any margin */
+  }
+  
+  /* Reduce padding for dropdown items */
+  .navbar .dropdown-menu .dropdown-item {
+    padding: 2px 8px;
+  }
+  
+  /* Optional: Reduce space between dropdown items */
+  .navbar .dropdown-menu .dropdown-item + .dropdown-item {
+    margin-top: 2px; /* Adjust the top margin between items */
+  }
+  
+  /* Reduce font size for all text inside the row */
+.row {
+  font-size: 14px;
+}
+
+/* Additional styling for links */
+.link-light {
+  color: #ccc; /* Light gray color for links */
+}
+
+/* Override Bootstrap's default link styles for better visibility */
+.link-light:hover {
+  color: #fff; /* White color on hover */
+}
+
+/* Reduce font size for h5 elements inside the columns */
+.col-md-3 h5 {
+  font-size: 18px;
+}
+
+/* Reduce font size for paragraphs inside the columns */
+.col-md-3 p {
+  font-size: 12px;
+}
+project/
+├── index.html
+├── contact.html
+├── team.html
+├── other.html
+├── css/
+│   └── styles.css
+├── img/
+│   └── (place your images here)
+└── js/
+    └── (place your JavaScript files here, if any)

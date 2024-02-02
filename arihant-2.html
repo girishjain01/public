@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paragraph with Icons</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Add the link to Font Awesome -->
+</head>
+<body>
+
+<div class="col-md-10">
+  <p class="text-white">पांच नमस्कार हैं। अरिहंत को नमस्कार। अरिहंत का अर्थ होता हैः जिसके सारे शत्रु विनष्ट हो गए; जिसके भीतर अब कुछ ऐसा नहीं रहा जिससे उसे लड़ना पड़ेगा। लड़ाई समाप्त हो गई। भीतर अब क्रोध नहीं है, जिससे लड़ना पड़े; भीतर अब काम नहीं है, जिससे लड़ना पड़े; अज्ञान नहीं है। वे सब समाप्त हो गए जिनसे लड़ाई थी। </p>
+  <a href="arihant-1.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">और आगे है</a>
+
+  <div class="mt-2">
+    <!-- Copy Icon -->
+    <a href="#" onclick="copyText()" title="Copy">
+      <i class="far fa-copy mx-2"></i>
+    </a>
+  
+    <!-- Share Icon (Replace # with the actual share link) -->
+    
+    <a href="#" title="Share">
+      <i class="fas fa-share-alt mx-2"></i>
+    </a>
+  
+    <!-- WhatsApp Icon (Replace # with the actual WhatsApp link) -->
+    <a href="https://wa.me/1234567890" title="WhatsApp">
+
+    
+      <i class="fab fa-whatsapp mx-2"></i>
+    </a>
+  </div>
+  <div class="mt-2">
+    <!-- WhatsApp Icon (Replace 'your-whatsapp-share-link' with the actual WhatsApp share link) -->
+    <a href="https://wa.me/your-phone-number" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp mx-2"></i>
+    </a>
+  
+    <!-- Share Icon (Replace 'your-share-link' with the actual share link) -->
+    <a href="your-share-link" target="_blank" title="Share">
+      <i class="fas fa-share-alt mx-2"></i>
+    </a>
+  </div>
+  
+  
+</div>
+
+<script>
+  function copyText() {
+    const textToCopy = document.querySelector('.text-white');
+    const textArea = document.createElement('textarea');
+    textArea.value = textToCopy.innerText;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    alert('Text copied to clipboard!');
+  }
+</script>
+
+</body>
+</html>
